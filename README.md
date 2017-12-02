@@ -17,7 +17,7 @@ December 2,
 - However, in restseq, a higher number of reads are generated from those targeted regions, compared to the average genome-wide sequencing coverage in bliss.
 - To call those regions with Double Strand Breaks (DSBs), I'm in the process of analyzing bam files. 
 - To call these variants, I have to know the expected potential abnormalities in the reads, after mapping them to the reference genome.
-- My gesture is that observing more indels is expected, in the vicinity of DSBs.  
+- My speculation is that observing more indels is expected, in the vicinity of DSBs.  
 
 
 - IGB plot is attached.
