@@ -11,7 +11,7 @@ Attached files include:
 December 2,
 - while the majority of reads are properly mapped to the human genome, they are poorly mapped to the mouse genome. I'm assuming that reads are from a human individual.
 - I aligned bliss and restseq data to the human reference genome (hg19)
-- Then I used Integrated Genome Browser (IGB) browser to visualize bam files of bliss and restseq.
+- Then I used Integrated Genome Browser (IGB) to visualize bam files of bliss and restseq.
 - Visualized data show that bliss is a very low-coverage sequencing data of the whole genome, in which reads are almost uniformly distributed along human chromosomes. 
 - In restseq, as I had envisaged before, sequencing machine has targeted some special regions of the genome for sequencing and no reads are generated from other genomic regions.
 - However, in restseq, a higher number of reads are produced from those targeted regions, compared to the average genome-wide sequencing coverage in bliss.
