@@ -14,9 +14,9 @@ December 2,
 - Then I used Integrated Genome Browser (IGB) to visualize bam files of bliss and restseq.
 - Visualized data show that bliss is a very low-coverage sequencing data of the whole genome, in which reads are almost uniformly distributed along human chromosomes. 
 - In restseq, as I had envisaged before, sequencing machine has targeted some special regions of the genome for sequencing and no reads are generated from other genomic regions.
-- However, in restseq, a higher number of reads are produced from those targeted regions, compared to the average genome-wide sequencing coverage in bliss.
+- However, in restseq, a higher number of reads are generated from those targeted regions, compared to the average genome-wide sequencing coverage in bliss.
 - To call those regions with Double Strand Breaks (DSBs), I'm in the process of analyzing bam files. 
 - To call these variants, I have to know the expected potential abnormalities in the reads, after mapping them to the reference genome.
-- My gesture is that in the vicinity of DSBs, observing more indels is expected.  
+- My gesture is that observing more indels is expected, in the vicinity of DSBs.  
 
 
