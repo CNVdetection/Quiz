@@ -20,3 +20,7 @@ December 2,
 - My gesture is that observing more indels is expected, in the vicinity of DSBs.  
 
 
+- IGB plot is attached.
+- Codes which I have used to generate the bam files, are in the attached text file
+
+
