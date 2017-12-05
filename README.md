@@ -25,6 +25,7 @@ December 2,
 
 
 December 5,
+
 Information are extracted from the BAM files, using the following samtools commands,
 
 samtools view  restseq_data_hg_sorted.bam |perl -lane 'print "$F[1]\t$F[2]\t$F[3]\t$F[4]\t$F[5]\t$F[6]\t$F[7]\t$F[8]"' > restseq_data_hg_sorted.hits
