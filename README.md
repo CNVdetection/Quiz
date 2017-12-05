@@ -24,3 +24,21 @@ December 2,
 - Codes which I have used to generate the bam files, are in the attached text file
 
 
+December 5,
+Information are extracted from the BAM files, using the following samtools commands,
+
+samtools view  restseq_data_hg_sorted.bam |perl -lane 'print "$F[1]\t$F[2]\t$F[3]\t$F[4]\t$F[5]\t$F[6]\t$F[7]\t$F[8]"' > restseq_data_hg_sorted.hits
+
+
+samtools view  bliss_data_hg_sorted.bam |perl -lane 'print "$F[1]\t$F[2]\t$F[3]\t$F[4]\t$F[5]\t$F[6]\t$F[7]\t$F[8]"' > bliss_data_hg_sorted.hits
+
+
+Information in the restseq_data_hg_sorted.hits and bliss_data_hg_sorted.hits files are consequently summarized using codes, written in R. Please see restseq.R and bliss.R codes.
+
+In restseq data:
+I have written a code in R to extract information from the restseq file (R code is uploaded on GitHub, please see restseq.R). In each genomic position, this code calculates the total read counts and also the number of reads with indels, mapped to that position.  
+
+In bliss data:
+I have written a code in R to extract information from the bliss file. Since in the bliss data we have the whole-genome sequencing data and many reads are mapped to locations which are close to each other, to have a better visualization of data I have summarized information in genomic segments of length  10 kb (R code is uploaded on GitHub, please see bliss.R).  This code calculates the total read counts and also the number of reads with indels, mapped to genomic segments with length 10 kb. 
+
+More results are given in Comparisions.pdf
