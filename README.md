@@ -52,8 +52,12 @@ December 6,
 Variants in bliss and restseq are called using samtools and bcftools
 
 samtools mpileup -uf hg19.fa bliss_data_hg_sorted.bam | bcftools view -bvcg - > varbliss.raw.bcf
+
 samtools mpileup -uf hg19.fa restseq_data_hg_sorted.bam | bcftools view -bvcg - > varrestseq.raw.bcf
+
 bcftools view varbliss.raw.bcf | /usr/share/samtools/vcfutils.pl varFilter -D100 > varbliss.flt.vcf
+
 bcftools view varrestseq.raw.bcf | /usr/share/samtools/vcfutils.pl varFilter -D100 > varrestseq.flt.vcf
+
 
 these VCF files are also visualized using Integrated Genome Browser package.
