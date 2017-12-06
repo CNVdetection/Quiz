@@ -48,6 +48,7 @@ More results are given in Comparisions.pdf
 
 
 December 6,
+
 Variants in bliss and restseq are called using samtools and bcftools
 
 samtools mpileup -uf hg19.fa bliss_data_hg_sorted.bam | bcftools view -bvcg - > varbliss.raw.bcf
