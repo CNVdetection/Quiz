@@ -43,3 +43,16 @@ In bliss data:
 I have written a code in R to extract information from the bliss file. Since in the bliss data we have the whole-genome sequencing data and many reads are mapped to locations which are close to each other, to have a better visualization of data I have summarized information in genomic segments of length  10 kb (R code is uploaded on GitHub, please see bliss.R).  This code calculates the total read counts and also the number of reads with indels, mapped to genomic segments with length 10 kb. 
 
 More results are given in Comparisions.pdf
+
+
+
+
+December 6,
+Variants in bliss and restseq are called using samtools and bcftools
+
+samtools mpileup -uf hg19.fa bliss_data_hg_sorted.bam | bcftools view -bvcg - > varbliss.raw.bcf
+samtools mpileup -uf hg19.fa restseq_data_hg_sorted.bam | bcftools view -bvcg - > varrestseq.raw.bcf
+bcftools view varbliss.raw.bcf | /usr/share/samtools/vcfutils.pl varFilter -D100 > varbliss.flt.vcf
+bcftools view varrestseq.raw.bcf | /usr/share/samtools/vcfutils.pl varFilter -D100 > varrestseq.flt.vcf
+
+these VCF files are also visualized using Integrated Genome Browser package.
