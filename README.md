@@ -60,4 +60,6 @@ bcftools view varbliss.raw.bcf | /usr/share/samtools/vcfutils.pl varFilter -D100
 bcftools view varrestseq.raw.bcf | /usr/share/samtools/vcfutils.pl varFilter -D100 > varrestseq.flt.vcf
 
 
-these VCF files are also visualized using Integrated Genome Browser package.
+these VCF files are also visualized using Integrated Genome Viewer package, a snapshot of the comparision is attached.
+i.e. igv_snapshot.png
+
